@@ -30,7 +30,7 @@ const SignUP:NextPage=()=>{
             }
             else{alert("Please Fill Password Field.");return ;}
         }
-        else{alert("Please Fill Eamil Field.");return ;}
+        else{alert("Please Fill Email Field.");return ;}
     }
     return (
         <>

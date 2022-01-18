@@ -23,11 +23,13 @@
 }
 .navlinks ul li{
     cursor: pointer;
+    padding: 2px 5px 2px 5px;
 }
 .navlinks ul li:hover{
-    text-decoration: underline;
-    color:#1d77ee;
-    font-weight: 700;
+    background-color: #1d77ee;
+    color: #fff;
+    padding: 2px 5px 2px 5px;
+    border-radius: 5px;
 }
 .navlinks span{
     margin-left: 5px;
@@ -44,6 +46,14 @@
 .hamburger:hover{
     color:#1d77ee;
 }
+
+.activenavlink{
+    background-color: #1d77ee;
+    color: #fff;
+    padding: 2px 5px 2px 5px;
+    border-radius: 5px;
+}
+
 
 @media (max-width : 950px){
     .navbar{
@@ -90,9 +100,13 @@
         align-items: center;
         justify-content: space-around;
     }
+    .mobilenavlink ul li{
+        padding: 2px 5px 2px 5px;
+    }
     .mobilenavlink ul li:hover{
-        text-decoration: underline;
-        color:#1d77ee;
-        font-weight: 700;
+        background-color: #1d77ee;
+    color: #fff;
+    padding: 2px;
+    border-radius: 5px;
     }
 }

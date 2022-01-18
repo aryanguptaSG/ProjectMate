@@ -1,0 +1,65 @@
+.body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.introText{
+    font-size: 1.5em;
+    padding: 20px;
+    text-align: center;
+}
+.homeInroPick{
+    padding: 20px;
+}
+.introText h2{
+    margin-bottom: 40px;
+}
+.introText h2 span{
+    background-color: #1d77ee;
+    color: #fff;
+    padding: 1px 5px 1px 5px;
+    border-radius: 10px;
+}
+.introText h4{
+    text-decoration: underline;
+}
+
+@media (max-width:1109px){
+    .body{
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        padding-top: 100px;
+    }
+}
+
+@media (max-width:500px){
+    .body{
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        padding-top: 50px;
+    }
+}
+
+
+
+
+/*------------------   Footer Part   ------------------*/
+
+.footer{
+    text-align: center;
+    padding: 20px;
+}
+.footer h5{
+    text-decoration: underline;
+}
