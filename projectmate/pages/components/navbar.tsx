@@ -16,20 +16,26 @@ const Navbar: NextPage = () => {
             <div className={styles.logodiv}>
                 <Link href="/"><a><Image src="/ProjectMate.svg" width={200} height={50} /></a></Link>
             </div>
-            <div className={showmobilenav ? styles.mobilenavlink : styles.navlinks}>
+            <div className={showmobilenav ? `${styles.navlinks} ${styles.mobilenavlink}`: styles.navlinks}>
                 <ul>
-                    <li>
+                    <li onClick={() => {
+                setshowmobilenav(!showmobilenav)
+            }}>
                         <Link href="/home">
                             <a>Home <span><FaHome /></span> </a>
                         </Link>
                     </li>
-                    <li>
+                    <li onClick={() => {
+                setshowmobilenav(!showmobilenav)
+            }}>
                         <Link href="/signin">
                             <a>SignIn <span><FaSignInAlt /></span></a>
                         </Link>
                     </li>
-                    <li>
-                        <Link href="/signup">
+                    <li onClick={() => {
+                setshowmobilenav(!showmobilenav)
+            }}>
+                        <Link  href="/signup">
                             <a>SignUp <span><MdAppRegistration /></span> </a>
                         </Link>
                     </li>
