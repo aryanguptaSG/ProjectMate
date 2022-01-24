@@ -1,24 +1,19 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
-import Image from 'next/image'
+import UnAuthHome from './components/unAuthHome'
+import MainHome from './components/MainHome'
+import { useSelector } from 'react-redux'
+import { STATE } from "../redux-store/reducers/authReducers"
 
 const Home: NextPage = () => {  
+  const getuser = (state:STATE)=>state
+  const user = useSelector(getuser);
   return (
     <>
       <Head>
         <title>Project Mate</title>
       </Head>
-      <div className={styles.body}>
-        <div className={styles.introText}>
-          <h2>Welcome To <span>Project Mate</span></h2>
-          <h4>Here We Talk About Project Ideas.</h4>
-        </div>
-        <div className={styles.homeInroPick}>
-          <Image src="/images/home_intro.jpg" width={600} height={400}/>
-        </div>
-      </div>
-      
+      {user.isauth?<MainHome/>:<UnAuthHome/>}
     </>
   )
 }

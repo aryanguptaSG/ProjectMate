@@ -40,8 +40,23 @@
     color: #fff;
     cursor: pointer;
 }
+.form a{
+    text-decoration: underline;
+    color: #063a7d;
+    font-weight: bold;
+}
+.label{
+    width: 80%;
+    text-align: left;
+    position: relative;
+    top: 15px;
+    left: 10px;
+    color: rgb(91, 91, 91);
+    font-size: 0.8em;
+}
 
-@media (max-width:950px){
+
+@media (max-width:999px){
     .signup{
         padding-top: 50px;
         flex-direction: column;
@@ -50,10 +65,14 @@
     }
     .form{
         margin-top: 100px;
+        margin-bottom: 100px;
         width: 80%;
         padding: 50px;
     }
     .form input , .form button{
+        width: 100%;
+    }
+    .label{
         width: 100%;
     }
 }
@@ -71,6 +90,9 @@
         padding: 50px;
     }
     .form input , .form button{
+        width: 100%;
+    }
+    .label{
         width: 100%;
     }
 }
